@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YIBAL Complaint Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <div class="lang-switch-inside">
+  <button id="toggleLang">English</button>
+</div>
+
+  </div>
+
+  <div class="form-container" id="formContainer">
+    <img src="logo.png" alt="Company Logo" class="logo" />
+
+    <h1 id="formTitle">استمارة الاقتراحات والشكاوى</h1>
+
+    <form id="complaintForm" novalidate>
+      <input type="hidden" name="Location" value="CCED" />
+
+      <label for="priority" id="labelPriority">1. الأولوية <span class="required">*</span></label>
+      <select id="priority" name="priority" required>
+        <option value="" disabled selected id="priorityPlaceholder">اختر مستوى الأولوية</option>
+        <option value="HIGH" data-en="HIGH">عالية</option>
+        <option value="MEDIUM" data-en="MEDIUM">متوسطة</option>
+        <option value="LOW" data-en="LOW">منخفضة</option>
+      </select>
+
+      <label for="issue-type" id="labelIssueType">2. نوع المشكلة <span class="required">*</span></label>
+      <select id="issue-type" name="issue-type" required>
+        <option value="" disabled selected id="issueTypePlaceholder">اختر نوع المشكلة</option>
+        <option value="HouseKeeping" data-en="HouseKeeping">التنظيف</option>
+        <option value="Facility" data-en="Facility">المرافق</option>
+        <option value="Catering" data-en="Catering">التموين</option>
+        <option value="Security" data-en="Security">الأمن</option>
+       
+      </select>
+
+      <label for="description" id="labelDescription">3. وصف المشكلة <span class="required">*</span></label>
+      <textarea id="description" name="description" rows="5" placeholder="صف المشكلة بالتفصيل..." required minlength="10"></textarea>
+
+      <h3 id="contactInfoHeader">4. معلومات التواصل</h3>
+
+      <label for="name" id="labelName">الاسم <span class="required">*</span></label>
+      <input type="text" id="name" name="name" placeholder="الاسم" required />
+
+      <label for="phone" id="labelPhone">رقم الهاتف <span class="required">*</span></label>
+      <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required />
+
+      <label for="room" id="labelRoom">رقم الغرفة <span class="required">*</span></label>
+      <input type="text" id="room" name="room" placeholder="رقم الغرفة" required />
+
+      <label for="email" id="labelEmail">البريد الإلكتروني (اختياري)</label>
+      <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" />
+
+     <label for="staff" id="labelStaff">الرقم الوظيفي (اختياري)</label>
+      <input type="text" id="staff" name="staff" placeholder="الرقم الوظيفي" />
+
+      <button type="submit" id="submitBtn">📨 إرسال البلاغ</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

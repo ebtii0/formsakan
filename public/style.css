@@ -1,0 +1,141 @@
+:root {
+  --green: rgb(92, 189, 107);
+  --blue: rgb(36, 79, 163);
+  --light: rgb(245, 240, 230);
+  --gray: rgb(209, 213, 219);
+  --dark: rgb(44, 44, 44);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+  direction: rtl;
+  transition: direction 0.3s ease;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: direction 0.3s ease;
+}
+
+h1 {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 150px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: var(--dark);
+}
+
+.required {
+  color: red;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: var(--light);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 0;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--blue);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--blue);
+  outline: none;
+  background-color: #f8fbff;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+/* زر تبديل اللغة */
+.lang-switch {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+.lang-switch button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background-color: var(--green);
+}
+.lang-switch-inside {
+  position: relative;
+  text-align: end;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.lang-switch-inside button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lang-switch-inside button:hover {
+  background-color: var(--green);
+}
