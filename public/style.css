@@ -139,3 +139,9 @@ input:focus, select:focus, textarea:focus {
 .lang-switch-inside button:hover {
   background-color: var(--green);
 }
+
+input[type="tel"] {
+  direction: rtl;
+  text-align: right;
+}
+
