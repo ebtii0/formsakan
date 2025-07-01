@@ -21,6 +21,8 @@ const texts = {
     emailPlaceholder: "البريد الإلكتروني",
     labelStaff: "الرقم الوظيفي (اختياري)",
     staffPlaceholder: "الرقم الوظيفي",
+    labelArea: "الموقع / القسم (اختياري)",
+    areaPlaceholder: "أدخل الموقع أو القسم",
     submitBtn: "📨 إرسال البلاغ"
   },
   en: {
@@ -45,6 +47,8 @@ const texts = {
     emailPlaceholder: "Email (optional)",
     labelStaff: "Staff Number (optional)",
     staffPlaceholder: "Staff Number (optional)",
+    labelArea: "Area / Department (Optional)",
+    areaPlaceholder: "Enter area or department",
     submitBtn: "📨 Submit Report"
   }
 };
@@ -74,6 +78,8 @@ const elements = {
   labelStaff: document.getElementById("labelStaff"),
   staffInput: document.getElementById("staff"),
   submitBtn: document.getElementById("submitBtn"),
+  labelArea: document.getElementById("labelArea"),
+  areaInput: document.getElementById("area"),
   formContainer: document.getElementById("formContainer")
 };
 
@@ -125,6 +131,9 @@ function updateLang(lang) {
 
   elements.labelStaff.textContent = t.labelStaff;
   elements.staffInput.placeholder = t.staffPlaceholder;
+
+  elements.labelArea.textContent = t.labelArea;
+  elements.areaInput.placeholder = t.areaPlaceholder;
 
   elements.submitBtn.textContent = t.submitBtn;
 }
