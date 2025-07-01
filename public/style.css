@@ -140,7 +140,7 @@ input:focus, select:focus, textarea:focus {
   background-color: var(--green);
 }
 
-input[type="tel"] {
+input[type="tel"]::placeholder {
   direction: rtl;
   text-align: right;
 }
