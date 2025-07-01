@@ -86,6 +86,7 @@ app.post('/submit-form', async (req, res) => {
 Emergency Report 
 
 Location: ${Location}
+Area/Dept: ${data["Area"]}
 Emergency Level: ${data["Emergency Level"]}
 Issue Type: ${issueType}
 Responsible Dept: ${data["Responsible Department"]}
