@@ -156,6 +156,7 @@ document.getElementById("complaintForm").addEventListener("submit", async functi
     "Phone": document.getElementById("phone").value,
     "Room No": document.getElementById("room").value,
     "Email": document.getElementById("email").value,
+    "Area": document.getElementById("area").value,
     "Staff No": document.getElementById("staff").value
   };
 
