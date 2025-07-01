@@ -139,7 +139,16 @@ function updateLang(lang) {
 }
 
 elements.langBtn.addEventListener("click", () => {
-  updateLang(currentLang === "ar" ? "en" : "ar");
+  const newLang = currentLang === "ar" ? "en" : "ar";
+  updateLang(newLang);
+  
+  if (newLang === "ar") {
+    document.body.classList.add("rtl");
+  } else {
+    document.body.classList.remove("rtl");
+  }
+});
+
 });
 
 
