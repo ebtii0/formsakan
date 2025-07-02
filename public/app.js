@@ -149,9 +149,6 @@ elements.langBtn.addEventListener("click", () => {
   }
 });
 
-});
-
-
 updateLang("ar");
 
 document.getElementById("complaintForm").addEventListener("submit", async function (e) {
