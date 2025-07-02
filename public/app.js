@@ -114,6 +114,9 @@ function updateLang(lang) {
 
   elements.labelDescription.innerHTML = t.labelDescription + ' <span class="required">*</span>';
   elements.description.placeholder = t.descriptionPlaceholder;
+  
+  elements.labelArea.textContent = t.labelArea;
+  elements.areaInput.placeholder = t.areaPlaceholder;
 
   elements.contactInfoHeader.textContent = t.contactInfoHeader;
 
@@ -132,8 +135,7 @@ function updateLang(lang) {
   elements.labelStaff.textContent = t.labelStaff;
   elements.staffInput.placeholder = t.staffPlaceholder;
 
-  elements.labelArea.textContent = t.labelArea;
-  elements.areaInput.placeholder = t.areaPlaceholder;
+
 
   elements.submitBtn.textContent = t.submitBtn;
 }
